@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Atividade - 14/08/2023</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h2><strong>Atividade - 14/08/2023 - Camila Weber</strong></h2>
+    <h4>Introdução ao Desenvolvimento Web</h4>
+    <a href="index.html">Início</a>
+    |  <a href="unidade1.html">Unidade 1</a>
+    |  <a href="unidade2.html">Unidade 2</a>
+    |  <a href="unidade3.html">Unidade 3</a>
+    <hr>
+    <p><strong>Exercício 2 (optatório)</strong><br>Um formulário permite ao usuário interagir submetendo dados para o website. 
+        Estes dados podem ser desde dados pessoais, escolhas simples, múltiplas até envio de arquivos. 
+        Este elemento é fundamental para construção de sistemas que realizam CRUD (Create, Retrieve, Update and Delete).
+        <br><strong>Valor:</strong> 1 ponto a ser adicoinado na avaliação da unidade 1.</p>
+    <br><hr><br>
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Insira seu nome"><br><br>
+            
+            <label for="data_nascimento>">Data de nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento"><br><br>
+            
+            <label for="sexo">Sexo:</label>
+            <input type="radio" id="feminino" name="sexo">
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="masculino" name="sexo">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="nao_binario" name="sexo">
+            <label for="nao_binario">Não binário</label>
+        </fieldset>
+    </form>
+    <form action="/action_page2.php">
+        <fieldset>
+            <legend>Dados Gerais</legend>
+            <label for="satisfacao">Satisfação: Insatisfeito</label>
+            <input type="range" id="satisfacao" name="satisfacao" min="0" max="100" value="50">
+            <label for="satisfacao">Muito satisfeito</label><br><br>
+            
+            <label for="foto_perfil>">Foto de perfile:</label>
+            <input type="file" id="foto_perfil" name="foto_perfil"><br><br>
+
+            <label for="musica">Preferência musical:</label>
+            <input type="checkbox" id="rock" name="musica">
+            <label for="rock">Rock</label>
+            <input type="checkbox" id="pop" name="musica">
+            <label for="pop">POP</label>
+            <input type="checkbox" id="eletronica" name="musica">
+            <label for="eletronica">Eletrônica</label>
+            <input type="checkbox" id="sertanejo" name="musica">
+            <label for="sertanejo">Sertanejo</label><br><br>
+
+            <label for="comentario">Comentário:</label><br>
+            <textarea name="comentario" id="comentario" rows="10" cols="60"></textarea>
+        </fieldset>
+        <br><input type="submit" value="Enviar" formaction="/action_page.php" formaction="/action_page2.php">
+    </form>
+</body>
+</html>

@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e0c29e;
+}
+
+div#estrutura {
+    width: 100vw;
+    max-width: 100vw;
+    display: grid;
+    grid-template-areas:
+        'header header header header'
+        'nav nav nav nav'
+        'main main main aside'
+        'footer footer footer footer';
+    margin: auto;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(15, 194, 194);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+header img {
+    height: 70px;
+    width: 70px;
+    padding: 0;
+}
+
+header h1 {
+    padding-top: 15px;
+}
+
+header button {
+    background-color: rgb(15, 194, 194);
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+header button:hover {
+    background-color: rgb(35, 180, 180);
+    font-weight: bold;
+}
+
+nav#cabecalho {
+    grid-area: nav;
+}
+
+nav#cabecalho ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(61, 204, 156);
+}
+
+nav#cabecalho ul li {
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+nav#cabecalho ul li:hover {
+    background-color: rgb(60, 191, 147);
+    display: block;
+    font-weight: bold;
+}
+
+main {
+    grid-area: main;
+    padding: 30px;
+    text-align: justify;
+    font-size: 1.1rem;
+    min-height: 100vw;
+}
+
+aside {
+    grid-area: aside;
+    max-width: 200px;
+    background-color: #c6a67f;
+    padding-right: 30px;
+    padding: 20px;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+aside p,
+aside h2,
+header button {
+    padding-right: 10px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(61, 204, 156);
+    font-size: 1.1rem;
+    padding-top: 10px;
+}
+
+footer p {
+    padding: 30px;
+}
+
+nav#rodape ul {
+    display: block;
+    text-align: center;
+}
+
+nav#rodape ul li {
+    list-style: none;
+    font-size: 1rem;
+    padding: 5px;
+    cursor: pointer;
+}
+
+nav#rodape ul li:hover {
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    background-color: #3cbf93;
+}
+
+
+@media screen and (max-width: 768px) {
+    div#estrutura {
+        width: 100vw;
+        max-width: 100vw;
+        display: grid;
+        grid-template-areas:
+            'header header header header'
+            'nav nav nav nav'
+            'main main main main'
+            'aside aside aside aside'
+            'footer footer footer footer';
+        margin: auto;
+    }
+
+    nav#cabecalho ul {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    nav#cabecalho ul li {
+        text-align: center;
+        list-style: none;
+        font-size: 1rem;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+
+    aside {
+        min-width: 100vw;
+        max-width: 100vw;
+    }
+}

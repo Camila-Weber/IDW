@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cadastro</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Avaliação 1</h1>
+        <h3>Introdução ao Desenvolvimento Web
+            <br>Discente: Camila Weber
+            <br>Docente: Ivan Pires
+        </h3>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="ph-bold ph-house"></i> Home</a></li>
+            <li><a href="produtos.html"><i class="ph-bold ph-storefront"></i> Produtos</a></li>
+            <li><a href="preços.html"><i class="ph-bold ph-coins"></i> Preços</a></li>
+            <li><a href="cadastro.html" target="_blank"><i class="ph-bold ph-sign-in"></i> Cadastro</a></li>
+            <li><a href="sobre.html"><i class="ph-bold ph-magnifying-glass"></i> Sobre</a></li>
+        </ul>
+    </nav>
+    <main class="cadastro">
+        <form class="cadastro">
+            <fieldset>
+                <legend>Cadastro</legend>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Nome Completo" required autofocus>
+                <br></br>
+                <label for="nasc">Data de Nascimento:</label><br>
+                <input type="date" id="nasc" name="nasc" required autofocus>
+                <br><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="email@gmail.com" required autofocus>
+                <br><br>
+                <label for="gênero">Gênero:</label><br>
+                <input type="radio" id="feminino" name="gênero" required autofocus>
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="masculino" name="gênero">
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="não binário" name="gênero">
+                <label for="não binário">Não binário</label>
+                <input type="radio" id="prefiro não informar" name="gênero">
+                <label for="prefiro não informar">Prefiro não informar</label>
+                <br><br>
+                <label for="cidade">Cidade:</label><br>
+                <select name="cidade" id="cidade" required autofocus>
+                    <option value=""></option>
+                    <option value="" disabled>Escolha uma opção</option>
+                    <option value="Sinop">Sinop</option>
+                    <option value="Sorriso">Sorriso</option>
+                    <option value="Vera">Vera</option>
+                    <option value="Santa Carmem">Santa Carmem</option>
+                    <option value="Lucas do Rio Verde">Lucas do Rio Verde</option>
+                    <option value="Claúdia">Claúdia</option>
+                    <option value="Colíder">Colíder</option>
+                </select>
+                <br><br>
+                <label for="endereço">Endereço:</label><br>
+                <textarea id="endereço" name="endereço" cols="20" rows="5"
+                    placeholder="Rua, Bairro, Número e Complemento" required autofocus></textarea>
+                <br><br>
+                <label for="frequência">Em quais dias da semana você costuma ir ao mercado?</label><br>
+                <input type="checkbox" id="Segunda-feira" name="frequência">
+                <label for="Segunda-feira">Segunda-feira</label>
+                <input type="checkbox" id="Terça-feira" name="frequência">
+                <label for="Terça-feira">Terça-feira</label>
+                <input type="checkbox" id="Quarta-feira" name="frequência">
+                <label for="Quarta-feira">Segunda</label>
+                <input type="checkbox" id="Quinta-feira" name="frequência">
+                <label for="Quinta-feira">Quinta-feira</label>
+                <input type="checkbox" id="Sexta-feira" name="frequência">
+                <label for="Sexta-feira">Sexta-feira</label>
+                <input type="checkbox" id="Sábado" name="frequência">
+                <label for="Sábado">Sábado</label>
+                <input type="checkbox" id="Domingo" name="frequência">
+                <label for="Domingo">Domingo</label>
+                <br><br>
+                <label for="documento">Docmento com foto:</label><br><br>
+                <label for="opção de documento">Tipo de documento:</label>
+                <select name="opção de documento" id="opção de documento" required autofocus>
+                    <option value=""></option>
+                    <option value="" disabled>Escolha uma opção</option>
+                    <option value="RG">RG</option>
+                    <option value="Habilitação">Habilitação</option>
+                    <option value="Passaporte">Passaporte</option>
+                </select>
+                <br><br>
+                <input type="file" id="documento" name="docmento" required autofocus>
+                <br><br>
+                <label for="senha">Senha:</label><br>
+                <input type="password" id="senha" name="senha" required autofocus>
+                <br><br><br>
+            </fieldset>
+            <br>
+            <div id="botao">
+                <input type="submit" id="enviar" value="Enviar">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <br><br><br>
+    </footer>
+</body>
+
+</html>
