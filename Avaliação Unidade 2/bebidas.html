@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Página inicial</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <header>
+        <img src="Assets/logo2-removebg-preview.png" alt="logo">
+        <nav>
+            <a href="#rodapé"><i class="ph ph-list"></i></a>
+            <ul>
+                <li id="menu"><a href="#home">MENU</a><br><br>
+                    <ul id="tudo"><br>
+                        <li><a href="index.html">Página Inicial</a></li><br>
+                        <li><a href="entrar.html">Entrar</a></li><br>
+                        <li><a href="pizzas.html">Pizzas</a></li><br>
+                        <li><a href="hamburguer.html">Hambúrguer</a></li><br>
+                        <li><a href="bebidas.html">Bebidas</a></li><br>
+                        <li><a href="doces.html">Doces</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <table>
+            <tr>
+                <th class="sabor">BEBIDA</th>
+                <th class="ingredientes">TIPO</th>
+                <th class="valor">VALOR</th>
+            </tr>
+            <tr>
+                <td class="sabor"><img
+                        src="Assets/bebidas/png-transparent-world-of-coca-cola-fizzy-drinks-diet-coke-cola-company-text-logo-thumbnail-removebg-preview.png"
+                        alt=""></td>
+                <td class="ingredientes">
+                    <ul>
+                        <li>COCA - COLA</li>
+                        <li>FANTA</li>
+                        <li>KUAT</li>
+                        <li>SPRITE</li>
+                        <li>COCA 0</li>
+                    </ul>
+                </td>
+                <td class="valor">
+                    <form>
+                        <input type="radio" id="pequena" name="tamanho" value="pequena">
+                        <label for="pequena">2 Litros - R$ 10.80</label><br>
+                        <input type="radio" id="media" name="tamanho" value="media">
+                        <label for="media">2.5 Litros - R$ 14.60</label><br>
+                        <input type="radio" id="grande" name="tamanho" value="grande">
+                        <label for="grande">3 Litros - R$ 19.30</label><br>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td class="sabor"><img
+                        src="Assets/bebidas/png-transparent-three-flavored-beverages-orange-juice-apple-juice-u0410u0411u041a-drink-fruit-juice-health-shake-non-alcoholic-beverage-smoothie-thumbnail-removebg-preview.png"
+                        alt=""></td>
+                <td class="ingredientes">
+                    <ul>
+                        <li>MARACUJÁ</li>
+                        <li>LARANJA</li>
+                        <li>UVA</li>
+                        <li>LIMÃO</li>
+                        <li>MANGA</li>
+                        <li>ACEROLA</li>
+                        <li>ABACAXI COM HORTELÃ</li>
+                    </ul>
+                </td>
+                <td class="valor">
+                    <form>
+                        <input type="radio" id="pequena" name="tamanho" value="pequena">
+                        <label for="pequena">500ml - R$ 9.80</label><br>
+                        <input type="radio" id="media" name="tamanho" value="media">
+                        <label for="media">700ml - R$ 12.60</label><br>
+                        <input type="radio" id="grande" name="tamanho" value="grande">
+                        <label for="grande">1 Litros - R$ 17.30</label><br>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td class="sabor"><img
+                        src="Assets/bebidas/png-transparent-several-soda-cans-coca-cola-orange-soft-drink-diet-coke-soda-can-food-can-product-thumbnail-removebg-preview.png"
+                        alt=""></td>
+                <td class="ingredientes">
+                    <ul>
+                        <li>COCA - COLA</li>
+                        <li>FANTA</li>
+                        <li>KUAT</li>
+                        <li>SPRITE</li>
+                        <li>COCA 0</li>
+                    </ul>
+                </td>
+                <td class="valor">
+                    <form>
+                        <input type="radio" id="pequena" name="tamanho" value="pequena">
+                        <label for="pequena">Lata - R$ 6.80</label><br>
+                        <input type="radio" id="media" name="tamanho" value="media">
+                        <label for="media">500ml - R$ 8.60</label><br>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td class="sabor"><img
+                        src="Assets/bebidas/png-transparent-beer-filled-in-beer-mug-beer-fanta-sprite-iced-tea-drink-chopp-glass-pint-glass-nutrition-facts-label-thumbnail-removebg-preview.png"
+                        alt=""></td>
+                <td class="ingredientes">
+                    <ul>
+                        <li>BRAHMA</li>
+                        <li>SKOL</li>
+                        <li>SPATEN</li>
+                        <li>IMPÉRIO</li>
+                        <li>HEINEKEN</li>
+                    </ul>
+                </td>
+                <td class="valor">
+                    <form>
+                        <input type="radio" id="pequena" name="tamanho" value="pequena">
+                        <label for="pequena">Lata - R$ 6.80</label><br>
+                        <input type="radio" id="media" name="tamanho" value="media">
+                        <label for="media">Longneck - R$ 13.60</label><br>
+                        <input type="radio" id="grande" name="tamanho" value="grande">
+                        <label for="grande">Garrafa - R$ 18.30</label><br>
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+        <table id="vertical">
+            <tr>
+                <th class="sabor">BEBIDA</th>
+            </tr>
+            <tr>
+                <td class="sabor"><img
+                        src="Assets/bebidas/png-transparent-world-of-coca-cola-fizzy-drinks-diet-coke-cola-company-text-logo-thumbnail-removebg-preview.png"
+                        alt=""></td>
+            </tr>
+            <th class="ingredientes">TIPO</th>
+            <tr>
+                <td class="ingredientes">
+                    <ul>
+                        <li>COCA - COLA</li>
+                        <li>FANTA</li>
+                        <li>KUAT</li>
+                        <li>SPRITE</li>
+                        <li>COCA 0</li>
+                    </ul>
+                </td>
+            </tr>
+            <th class="valor">VALOR</th>
+            <tr>
+                <td class="valor">
+                    <form>
+                        <input type="radio" id="pequena" name="tamanho" value="pequena">
+                        <label for="pequena">2 Litros - R$ 10.80</label><br>
+                        <input type="radio" id="media" name="tamanho" value="media">
+                        <label for="media">2.5 Litros - R$ 14.60</label><br>
+                        <input type="radio" id="grande" name="tamanho" value="grande">
+                        <label for="grande">3 Litros - R$ 19.30</label><br>
+                    </form>
+                </td>
+            </tr>
+            <tr class="divisoria"></tr>
+            <tr>
+                <th class="sabor">BEBIDA</th>
+            </tr>
+            <tr>
+                <td class="sabor"><img
+                        src="Assets/bebidas/png-transparent-three-flavored-beverages-orange-juice-apple-juice-u0410u0411u041a-drink-fruit-juice-health-shake-non-alcoholic-beverage-smoothie-thumbnail-removebg-preview.png"
+                        alt=""></td>
+            </tr>
+            <th class="ingredientes">TIPO</th>
+            <tr>
+                <td class="ingredientes">
+                    <ul>
+                        <li>MARACUJÁ</li>
+                        <li>LARANJA</li>
+                        <li>UVA</li>
+                        <li>LIMÃO</li>
+                        <li>MANGA</li>
+                        <li>ACEROLA</li>
+                        <li>ABACAXI COM HORTELÃ</li>
+                    </ul>
+                </td>
+            </tr>
+            <th class="valor">VALOR</th>
+            <tr>
+                <td class="valor">
+                    <form>
+                        <input type="radio" id="pequena" name="tamanho" value="pequena">
+                        <label for="pequena">500ml - R$ 9.80</label><br>
+                        <input type="radio" id="media" name="tamanho" value="media">
+                        <label for="media">700ml - R$ 12.60</label><br>
+                        <input type="radio" id="grande" name="tamanho" value="grande">
+                        <label for="grande">1 Litros - R$ 17.30</label><br>
+                    </form>
+                </td>
+            </tr>
+            <tr class="divisoria"></tr>
+            <tr>
+                <th class="sabor">BEBIDA</th>
+            </tr>
+            <tr>
+                <td class="sabor"><img
+                        src="Assets/bebidas/png-transparent-several-soda-cans-coca-cola-orange-soft-drink-diet-coke-soda-can-food-can-product-thumbnail-removebg-preview.png"
+                        alt=""></td>
+            </tr>
+            <th class="ingredientes">TIPO</th>
+            <tr>
+                <td class="ingredientes">
+                    <ul>
+                        <li>COCA - COLA</li>
+                        <li>FANTA</li>
+                        <li>KUAT</li>
+                        <li>SPRITE</li>
+                        <li>COCA 0</li>
+                    </ul>
+                </td>
+            </tr>
+            <th class="valor">VALOR</th>
+            <tr>
+                <td class="valor">
+                    <form>
+                        <input type="radio" id="pequena" name="tamanho" value="pequena">
+                        <label for="pequena">Lata - R$ 6.80</label><br>
+                        <input type="radio" id="media" name="tamanho" value="media">
+                        <label for="media">500ml - R$ 8.60</label><br>
+                    </form>
+                </td>
+            </tr>
+            <tr class="divisoria"></tr>
+            <tr>
+                <th class="sabor">BEBIDA</th>
+            </tr>
+            <tr>
+                <td class="sabor"><img
+                        src="Assets/bebidas/png-transparent-beer-filled-in-beer-mug-beer-fanta-sprite-iced-tea-drink-chopp-glass-pint-glass-nutrition-facts-label-thumbnail-removebg-preview.png"
+                        alt=""></td>
+            </tr>
+            <th class="ingredientes">TIPO</th>
+            <tr>
+                <td class="ingredientes">
+                    <ul>
+                        <li>BRAHMA</li>
+                        <li>SKOL</li>
+                        <li>SPATEN</li>
+                        <li>IMPÉRIO</li>
+                        <li>HEINEKEN</li>
+                    </ul>
+                </td>
+            </tr>
+            <th class="valor">VALOR</th>
+            <tr>
+                <td class="valor">
+                    <form>
+                        <input type="radio" id="pequena" name="tamanho" value="pequena">
+                        <label for="pequena">Lata - R$ 6.80</label><br>
+                        <input type="radio" id="media" name="tamanho" value="media">
+                        <label for="media">Longneck - R$ 13.60</label><br>
+                        <input type="radio" id="grande" name="tamanho" value="grande">
+                        <label for="grande">Garrafa - R$ 18.30</label><br>
+                    </form>
+                </td>
+            </tr>
+            <tr class="divisoria"></tr>
+        </table>
+    </main>
+    <footer id="rodapé">
+        <nav>
+            <ul>
+                <li><a href="index.html">PÁGINA INICIAL</a></li>
+                <li><a href="entrar.html">ENTRAR</a></li>
+                <li><a href="pizzas.html">CARDÁPIO DE PIZZAS</a></li>
+                <li><a href="hamburguer.html">CARDÁPIO DE HAMBÚRGUER</a></li>
+                <li><a href="bebidas.html">GELADEIRA</a></li>
+                <li><a href="doces.html">FREEZER</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

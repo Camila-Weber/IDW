@@ -1,0 +1,992 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c2c1bf;
+}
+
+header img {
+    width: 12vw;
+    height: 12vh;
+    padding-left: 5px;
+}
+
+header {
+    background-color: #273e47;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    height: 10vh;
+    top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100vw;
+}
+
+header i.ph {
+    display: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #99621e;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #c2c1bf;
+    color: #273e47;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+section {
+    padding-top: 90px;
+    height: 100vh;
+}
+
+/* PÁGINA INICIAL - HOME */
+section div p {
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1.2rem;
+}
+
+section#home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+section#home div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: #9b2915;
+    font-size: 2rem;
+    text-align: center;
+}
+
+section#home div a {
+    text-decoration: none;
+    color: #273e47;
+    font-weight: bolder;
+    border: #9b2915 solid 3px;
+    border-radius: 20px;
+    width: 15vw;
+    cursor: pointer;
+}
+
+section#home div a:hover {
+    background-color: #273e47;
+    border: #273e47 solid 3px;
+    color: #c2c1bf;
+    cursor: pointer;
+}
+
+/* PÁGINA INICIAL - PIZZAS */
+section#pizzas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+section#pizzas div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: #273e47;
+    font-size: 2rem;
+    text-align: center;
+    width: 50vw;
+}
+
+section#pizzas div img {
+    width: 40vw;
+}
+
+section#pizzas div#fatia img {
+    width: 8vw;
+}
+
+section#pizzas div a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #273e47;
+    font-size: 2rem;
+    font-weight: bolder;
+    border-radius: 20px;
+    width: 25vw;
+    cursor: pointer;
+}
+
+section#pizzas div a:hover {
+    background-color: #9b2915;
+    color: #c2c1bf;
+    cursor: pointer;
+}
+
+/* PÁGINA INICIAL - HAMBÚRGUER */
+section#hamburguer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+section#hamburguer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    grid-area: 40px;
+}
+
+section#hamburguer img#hbmgr {
+    width: 30vw;
+}
+
+section#hamburguer img#btt {
+    width: 18vw;
+}
+
+section#hamburguer div#little_hamburguer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: #9b2915;
+    font-size: 2rem;
+    text-align: center;
+    width: 50vw;
+}
+
+section#hamburguer div#little_hamburguer img {
+    width: 10vw;
+}
+
+section#hamburguer div a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #9b2915;
+    font-size: 2rem;
+    font-weight: bolder;
+    border-radius: 20px;
+    width: 25vw;
+    height: 10vh;
+    cursor: pointer;
+}
+
+section#hamburguer div a:hover {
+    background-color: #273e47;
+    color: #c2c1bf;
+    cursor: pointer;
+}
+
+/* PÁGINA INICIAL - BEBIDAS */
+section#bebidas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+section#bebidas div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    grid-area: 40px;
+    color: #273e47;
+}
+
+section#bebidas div#coca {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: #273e47;
+    font-size: 2rem;
+    text-align: center;
+    width: 50vw;
+}
+
+section#bebidas div#coca img {
+    width: 8vw;
+    padding-bottom: 5px;
+}
+
+section#bebidas div a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #273e47;
+    font-size: 2rem;
+    font-weight: bolder;
+    border-radius: 20px;
+    width: 25vw;
+    cursor: pointer;
+}
+
+section#bebidas div a:hover {
+    background-color: #9b2915;
+    color: #c2c1bf;
+    cursor: pointer;
+}
+
+
+/* PÁGINA INICIAL - DOCES */
+section#doces {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+section#doces div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    grid-area: 40px;
+}
+
+section#doces div#casquinha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: #9b2915;
+    font-size: 2rem;
+    text-align: center;
+    width: 50vw;
+}
+
+section#doces div#casquinha img {
+    width: 8vw;
+}
+
+section#doces div a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #9b2915;
+    font-size: 2rem;
+    font-weight: bolder;
+    border-radius: 20px;
+    width: 25vw;
+    height: 10vh;
+    cursor: pointer;
+}
+
+section#doces div a:hover {
+    background-color: #273e47;
+    color: #c2c1bf;
+    cursor: pointer;
+}
+
+section#doces div#bolos {
+    display: flex;
+    flex-direction: column;
+}
+
+section#doces div#bolos img {
+    width: 20vw;
+}
+
+/*ENTRAR*/
+section#entrar div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+section#entrar h1 {
+    text-align: center;
+    color: #273e47;
+    font-size: 3rem;
+}
+
+section#entrar div form {
+    border: #9b2915 solid 4px;
+    border-radius: 15px;
+    height: 45vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7b9e89;
+    color: #9b2915;
+    font-size: 1.5rem;
+}
+
+section#entrar div h3 {
+    width: 35vw;
+    background-color: #9b2915;
+    border-radius: 15px 15px 0px 0px;
+    color: #fff1d6;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+section#entrar input {
+    font-size: 1.2rem;
+    border: #9b2915 solid 2px;
+    border-radius: 10px;
+    box-shadow: none;
+    background-color: #fff1d6;
+    width: 25vw;
+}
+
+section#entrar button {
+    font-size: 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+section#entrar div.botao {
+    border: none;
+    border-radius: none;
+    width: 33vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 20px;
+}
+
+button.google {
+    background-color: rgb(224, 4, 4);
+    border: none;
+    color: white;
+    width: 25vw;
+}
+
+button.entrar {
+    background-color: rgb(3, 111, 3);
+    border: none;
+    width: 10vw;
+    color: white;
+}
+
+button.troca {
+    background-color: #99621e;
+    color: white;
+    border: none;
+    width: 13vw;
+}
+
+/* ENTRAR - QUEM SOMOS? */
+section#quemsomos h1 {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #273e47;
+}
+
+section#quemsomos div#organizacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+section#quemsomos div#organizacao div img {
+    width: 30vw;
+    height: 30vh;
+    object-fit: cover;
+}
+
+section#quemsomos div#organizacao div {
+    width: 31.3vw;
+    height: 36vh;
+    border: #273e47 solid 6px;
+    background-color: #9b2915;
+}
+
+section#quemsomos div#organizacao div h2 {
+    color: #fff1d6;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+section#quemsomos div#organizacao div p {
+    text-align: justify;
+    color: #c2c1bf;
+    font-size: 1.3rem;
+    padding: 8px;
+}
+
+section#quemsomos div#organizacao div:hover {
+    height: 72vh;
+    transition: 2s;
+}
+
+/* ENTRAR - OBJETIVOS */
+section#objetivos h1 {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #273e47;
+}
+
+section#objetivos p {
+    text-align: justify;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+section#objetivos div#contato img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+section#objetivos div#contato {
+    padding-top: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #273e47;
+}
+
+section#objetivos div#contato a {
+    text-decoration: none;
+    color: #273e47;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 45vw;
+    height: 7vh;
+    border-radius: 50px;
+}
+
+section#objetivos div#contato a:hover {
+    background-color: #99621e;
+    color: #fff1d6;
+}
+
+/* PIZZAS */
+img {
+    width: 25vw;
+}
+
+table {
+    width: 96vw;
+    margin: 20px;
+    margin-right: 20px;
+    font-size: 1.5rem;
+    color: #9b2915;
+}
+
+
+main table#vertical {
+    display: none;
+}
+
+th {
+    text-align: center;
+    border-bottom: #273e47 solid 3px;
+    padding-bottom: 10px;
+}
+
+td.sabor {
+    color: #9b2915;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 25vw;
+    border-bottom: #273e47 solid 3px;
+    padding-bottom: 10px;
+}
+
+td.ingredientes {
+    width: 25vw;
+    padding-left: 50px;
+    border-bottom: #273e47 solid 3px;
+    padding-bottom: 10px;
+}
+
+td.ingredientes ul li {
+    list-style: square;
+}
+
+td.valor {
+    width: 25vw;
+    padding-left: 35px;
+    border-bottom: #273e47 solid 3px;
+    padding-left: 3vw;
+}
+
+td.adicionais {
+    padding-left: 45px;
+    border-bottom: #273e47 solid 3px;
+    padding-bottom: 10px;
+}
+
+
+/* MENU */
+
+#menu {
+    position: relative;
+    padding-right: 20vw;
+    padding-bottom: 20px;
+}
+
+header.PI li#menu,
+header.ETR li#menu{
+    padding-right: 0;
+}
+
+#menu:hover #tudo {
+    display: block;
+}
+
+ul#tudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    height: 35vh;
+    width: 25vw;
+    margin-top: 1.5vh;
+    border-radius: 12px;
+    background-color: #273e47;
+    display: none;
+}
+
+ul#menu li a {
+    width: 30vw;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    height: 20vh;
+    background-color: #273e47;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer nav ul li a {
+    color: #99621e;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: bolder;
+}
+
+footer nav ul li a:hover {
+    background-color: #c2c1bf;
+    color: #273e47;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+@media screen and (min-width: 935px) {
+
+    /* PÁGINA INICIAL */
+    header nav ul li a,
+    footer nav ul li a {
+        font-size: 1.5rem;
+    }
+
+    header {
+        height: 14.5vh;
+    }
+
+    header img {
+        height: 20vh;
+    }
+
+    section#home img {
+        width: 40vw;
+    }
+
+    section div h1 {
+        font-size: 4rem;
+    }
+
+    section div p {
+        font-size: 2rem;
+    }
+
+    section#doces div#casquinha {
+        width: 70vw;
+    }
+
+    section#doces div#bolos img {
+        width: 10vw;
+    }
+
+    /* ENTRAR */
+
+    section#entrar div#login form,
+    section#entrar div#cadastro form {
+        width: 45vw;
+    }
+
+    section#entrar form h3 {
+        width: 45vw;
+        font-size: 2rem;
+    }
+
+    section#entrar form input,
+    section#entrar form button.google {
+        width: 40vw;
+        font-size: 1.5rem;
+        height: 4vh;
+    }
+
+    section#entrar form div.botao {
+        width: 42vw;
+    }
+
+    section#entrar form div.botao button.entrar,
+    section#entrar form div.botao button.troca {
+        width: 30vw;
+        font-size: 1.5rem;
+        height: 4vh;
+        margin-bottom: 10px;
+    }
+
+    section#quemsomos div#organizacao div img {
+        width: 30.7vw;
+    }
+
+    section#objetivos p {
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: justify;
+    }
+
+    main table li,
+    td,
+    input,
+    p {
+        font-size: 2rem;
+        margin-left: 60px;
+    }
+
+    main table th.ingredientes,
+    main table td.ingredientes {
+        width: 20vw;
+    }
+
+    main table th {
+        font-size: 2.5rem;
+    }
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    header img {
+        width: 23vw;
+        height: 10vh;
+        padding-right: 5px;
+    }
+
+    header {
+        width: 100vw;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        position: sticky;
+        height: 8vh;
+    }
+
+    header nav ul li a {
+        font-size: 1.2rem;
+    }
+    
+    nav ul{
+        display: none;
+    }
+
+    header i.ph {
+        display: block;
+        color: #fff1d6;
+    }
+
+    /* PAGINA INICIAL */
+    section#home,
+    section#hamburguer,
+    section#doces {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    section#home img {
+        width: 40vw;
+    }
+
+    section#home div a {
+        width: 35vw;
+    }
+
+    section#pizzas,
+    section#bebidas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#pizzas div img {
+        width: 55vw;
+    }
+
+    section#pizzas div#fatia,
+    section#hamburguer div#little_hamburguer,
+    section#bebidas div#coca,
+    section#doces div#casquinha {
+        width: 100vw;
+    }
+
+    section#pizzas div a {
+        width: 50vw;
+    }
+
+    section#hamburguer div img#hbmgr {
+        width: 30vw;
+    }
+
+    section#hamburguer div img#btt {
+        width: 18vw;
+    }
+
+    section#hamburguer div a {
+        width: 45vw;
+    }
+
+    section#bebidas div a {
+        width: 50vw;
+    }
+
+    section#doces div#bolos {
+        display: flex;
+        flex-direction: row;
+    }
+
+    section#doces div a {
+        width: 35vw;
+    }
+
+    /* ENTRAR */
+    section#entrar {
+        height: 125vh;
+    }
+
+    section#entrar div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#entrar div#login form,
+    section#entrar div#cadastro form {
+        width: 95vw;
+    }
+
+    section#entrar form h3 {
+        width: 95vw;
+    }
+
+    section#entrar form input,
+    section#entrar form button.google {
+        width: 85vw;
+    }
+
+    section#entrar form div.botao {
+        width: 90vw;
+    }
+
+    section#entrar form div.botao button.entrar,
+    section#entrar form div.botao button.troca {
+        width: 80vw;
+        margin-bottom: 10px;
+    }
+
+    section#quemsomos {
+        height: 250vh;
+    }
+
+    section#quemsomos div#organizacao {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#quemsomos div#organizacao div {
+        height: 72vh;
+        width: 95vw;
+        margin: 20px;
+    }
+
+    section#quemsomos div#organizacao div img {
+        width: 92.7vw;
+    }
+
+    section#objetivos {
+        height: 120vh;
+    }
+
+    section#objetivos div#contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    section#objetivos div#contato a:hover {
+        width: 80vw;
+        height: 10vh;
+    }
+
+    /* PIZZAS */
+    main table {
+        display: none;
+        margin: 0;
+    }
+
+    main table#vertical {
+        display: block;
+        margin: 10px;
+    }
+
+    main table#vertical img {
+        width: 80vw;
+    }
+
+    main table#vertical tr.divisoria {
+        height: 10vh;
+    }
+
+    main table#vertical th {
+        width: 100vw;
+        padding: 20px;
+    }
+
+    main table#vertical td {
+        padding: 0;
+        padding-left: 30px;
+    }
+
+    main table#vertical td.ingredientes {
+        padding-left: 60px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    footer {
+        height: 60vw;
+        margin-top: 10vh;
+    }
+
+    footer nav ul {
+        display: flex;
+        flex-direction: column;
+        height: 60vw;
+    }
+}
