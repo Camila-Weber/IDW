@@ -1,0 +1,627 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #233e59;
+    max-width: 100vw;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+    border-bottom: #be901b solid 2px;
+}
+
+header img {
+    width: 6.5rem;
+    margin-left: 5px;
+}
+
+header h1 {
+    color: #be901b;
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #be901b;
+    font-size: 1.5rem;
+    padding: 5px;
+    font-weight: bolder;
+    display: none;
+}
+
+header i {
+    color: #be901b;
+    padding: 15px;
+    font-size: 2.5rem;
+}
+
+#menu {
+    display: none;
+}
+
+header i:hover,
+header i:hover a {
+    background-color: #be901b;
+    color: #233e59;
+    border-radius: 15px;
+    display: block;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    color: #be901b;
+    max-width: 100vw;
+}
+
+
+/* CADASTRO */
+.cadastro {
+    border-right: #be901b solid 2px;
+    width: 50vw;
+    padding: 3rem;
+    height: calc(100vh - 5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.cadastro input {
+    width: 20vw;
+    height: 4vh;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+.cadastro h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    padding-bottom: 0.3rem;
+    text-align: justify;
+}
+
+.cadastro2 {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding: 3rem;
+}
+
+.cadastro2 p {
+    margin-top: 1rem;
+    text-align: center;
+    margin-left: 0;
+    font-size: 1.5rem;
+}
+
+button {
+    width: 10vw;
+    height: 5vh;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: #be901b;
+    background-color: #233e59;
+    border: #be901b solid;
+    border-radius: 20px;
+}
+
+#cadastrar {
+    border: red solid;
+}
+
+button#loginc a,
+button#loginl a,
+button#cadastroc a,
+button#cadastrol a {
+    text-decoration: none;
+    color: #be901b;
+}
+
+button:hover,
+button#loginc:hover a,
+button#loginl:hover a,
+button#cadastroc:hover a,
+button#cadastrol:hover a {
+    background-color: #be901b;
+    color: #233e59;
+    cursor: pointer;
+}
+
+button#salvar {
+    display: none;
+}
+
+
+#checkc,
+#checkM,
+#checkm,
+#checke,
+#checkn {
+    color: green;
+    display: none;
+}
+
+#ncheckc,
+#ncheckM,
+#ncheckm,
+#nchecke,
+#ncheckn {
+    color: red;
+}
+
+table th {
+    font-size: 1.5rem;
+    text-align: start;
+    padding: 10px;
+}
+
+table td {
+    font-size: 1.3rem;
+    padding: 10px;
+    border-right: dotted;
+    word-break: normal;
+}
+
+table i {
+    padding: 10px;
+}
+
+table i:hover {
+    background-color: #233e59;
+    color: #be901b;
+    border-radius: 50%;
+}
+
+table {
+    max-width: 50vw;
+    min-width: 42vw;
+    max-height: 60vh;
+    overflow: scroll;
+}
+
+table tr:hover {
+    background-color: #be901b;
+    color: #233e59;
+}
+
+#tabela {
+    max-width: 50vw;
+    max-height: 60vh;
+    overflow-x: scroll;
+    overflow-x: auto;
+}
+
+
+/* INICIO */
+#inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+.inicio1,
+.inicio2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90vw;
+}
+
+.inicio1 img {
+    width: 25vw;
+}
+
+.inicio2 img {
+    width: 15vw;
+}
+
+p.gato {
+    padding: 5rem;
+
+    color: #233e59;
+}
+
+p.gato img {
+    display: none;
+}
+
+p.gato:hover img {
+    display: block;
+}
+
+
+/* GATINHOS */
+
+#gatinhos {
+    max-width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem;
+}
+
+.gatinho {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 130vh;
+    border: #be901b solid;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 10px;
+    max-width: 50vw;
+}
+
+.gatinho img {
+    width: 25vw;
+}
+
+.gatinho h2 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.gatinho p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.gatinho div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30vw;
+}
+
+.gatinho div i {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.gatinhos {
+    padding-right: 10px;
+}
+
+.gatinho div i {
+    padding: 20px;
+}
+
+
+
+@media screen and (max-width: 1390px) {
+    #gatinhos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 10px;
+        margin: 3rem;
+    }
+
+    .gatinho {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 130vh;
+        border: #be901b solid;
+        border-radius: 15px;
+        padding: 2rem;
+        margin-bottom: 10px;
+        max-width: 50vw;
+    }
+
+    .gatinho img {
+        width: 25vw;
+    }
+
+    .gatinho h2 {
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+
+    .gatinho p {
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+
+    .gatinho div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 30vw;
+    }
+
+    .gatinho div i {
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+
+    .gatinhos {
+        padding-right: 10px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        width: 100vw;
+        flex-direction: column;
+        height: 15vh;
+    }
+
+    header img {
+        display: none;
+    }
+
+    header h1 {
+        color: #be901b;
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        color: #be901b;
+    }
+
+    header i {
+        font-size: 2rem;
+    }
+
+    table th {
+        font-size: 1.3rem;
+        text-align: start;
+        padding: 10px;
+    }
+    
+    table td {
+        font-size: 1.2rem;
+        padding: 10px;
+        border-right: dotted;
+        word-break: normal;
+    }
+    
+    table i {
+        padding: 10px;
+    }
+    
+    table i:hover {
+        background-color: #233e59;
+        color: #be901b;
+        border-radius: 50%;
+    }
+    
+    table {
+        max-width: 100vw;
+        min-width: 90vw;
+        overflow: scroll;
+    }
+    
+    #tabela {
+        max-width: 90vw;
+        overflow-x: scroll;
+        overflow-x: auto;
+    }
+
+    #inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .inicio1,
+    .inicio2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100vw;
+    }
+
+    .inicio1 img {
+        width: 75vw;
+    }
+
+    .inicio2 img {
+        width: 70vw;
+    }
+
+    p.gato {
+        padding-bottom: 5rem;
+        color: #be901b;
+        text-align: center;
+    }
+
+    p.gato:hover {
+        color: #233e59;
+    }
+
+    
+
+    #gatinhos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 10px;
+        margin: 1rem;
+    }
+
+    .gatinho {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 110vh;
+        border: #be901b solid;
+        border-radius: 15px;
+        padding: 2rem;
+        margin-bottom: 10px;
+        max-width: 100vw;
+    }
+
+    .gatinho img {
+        width: 50vw;
+    }
+
+    .gatinho h2 {
+        font-size: 2.5rem;
+        font-weight: bolder;
+    }
+
+    .gatinho p {
+        font-size: 1.4rem;
+        text-align: justify;
+    }
+
+    .gatinho div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70vw;
+    }
+
+    .gatinho div i {
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+
+    .gatinhos {
+        padding-right: 0px;
+    }
+
+    .cadastro {
+        border-right: none;
+        width: 100vw;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+
+    .cadastro input {
+        width: 80vw;
+        height: 5vh;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        padding-left: 5px;
+    }
+
+    .cadastro h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        padding-bottom: 0.3rem;
+        text-align: justify;
+    }
+
+    .cadastro2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        padding: 3rem;
+    }
+
+    .cadastro2 p {
+        margin-top: 1rem;
+        text-align: center;
+        margin-left: 0;
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 32vw;
+        height: 5vh;
+        font-size: 1.2rem;
+        font-weight: bolder;
+        color: #be901b;
+        background-color: #233e59;
+        border: #be901b solid;
+        border-radius: 20px;
+    }
+
+    button:hover {
+        background-color: #be901b;
+        color: #233e59;
+        cursor: pointer;
+    }
+
+    button#salvar {
+        display: none;
+    }
+
+    .cadastro div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .ph {
+        font-size: 2.5rem;
+        display: none;
+    }
+
+
+}

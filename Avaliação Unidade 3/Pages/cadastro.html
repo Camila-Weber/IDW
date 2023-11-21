@@ -1,0 +1,50 @@
+
+<section onload="Read()" class="cadastro">
+    <h2>Cadastre-se</h2><br><br>
+    <div>
+        <button id="loginc"><a onclick="menu('login')" href="#">Login</a></button>
+        <button id="cadastroc"><a onclick="menu('cadastro')" href="#">Cadastro</a></button>
+    </div><br><br><br>
+    <input type="text" id="nometutor" oninput="Preencher()" placeholder="Nome Completo" value=""><br>
+    <input type="text" id="email" oninput="Preencher()" placeholder="E-mail" value=""><br>
+    <input type="text" id="senha" oninput="Validar()" placeholder="Senha" value="">
+    <p id="caracteres">8 caracteres
+        <i id="checkc" class="ph-bold ph-check"></i><i id="ncheckc" class="ph-bold ph-x"></i>
+    </p>
+    <p id="maiuscula">1 letra maiúscula
+        <i id="checkM" class="ph-bold ph-check"></i><i id="ncheckM" class="ph-bold ph-x"></i>
+    </p>
+    <p id="minuscula">1 letra minúscula
+        <i id="checkm" class="ph-bold ph-check"></i><i id="ncheckm" class="ph-bold ph-x"></i>
+    </p>
+    <p id="especial">1 caracter especial
+        <i id="checke" class="ph-bold ph-check"></i><i id="nchecke" class="ph-bold ph-x"></i>
+    </p>
+    <p id="numero">1 número
+        <i id="checkn" class="ph-bold ph-check"></i><i id="ncheckn" class="ph-bold ph-x"></i>
+    </p>
+    <br>
+    <input type="text" id="rsenha" oninput="Validar()" placeholder="Confirme sua senha" value=""><br>
+    <input type="hidden" id="id">
+    <br><br>
+    <button id="cadastrar" onclick="SAVE()">Salvar</button>
+
+</section>
+<section class="cadastro2">
+    <h2>Junte-se ao Cat's World!</h2>
+    <p>Cadastre-se e faça parte da nossa comunidade.</p>
+    <p>Explore e conheça gatinhos e suas histórias.</p><br><br><br>
+    <div id="tabela">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="dados">
+            </tbody>
+        </table>
+    </div>
+</section>
